@@ -1,0 +1,109 @@
+html {width: 100%;
+    box-sizing:border-box;
+    background:white url("./images/bg-curve-desktop.svg") bottom no-repeat scroll;
+    background-size:180% 50%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    box-sizing:border-box;
+    text-align:center;
+    width:90%;
+    margin:auto;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+align-items:center;
+padding:10px;}
+
+.logo {block-size: 20px;}
+
+nav ul {font-family: 'Raleway', sans-serif;
+    font-weight:400px;
+    font-size:15px;
+    display:flex;
+    list-style-type: none;
+}
+
+nav ul li a {text-decoration: none;
+    margin:20px;
+    color:hsl(238, 22%, 44%);
+}
+
+.main-container {
+    align-items:center;
+    padding:15px;
+    box-sizing:border-box;
+    display:grid;
+    grid-template-columns:50% 50%;
+grid-template-rows: auto;
+border:1px solid black;}
+
+.illustration-img {width:100%;}
+
+.item {padding:10px;
+    text-align:center;}
+
+.one {grid-area: 1/2/2/3;}
+
+.three {grid-area: 2/2/3/3;}
+
+h2 {font-family: 'Raleway', sans-serif;
+    font-weight:700px;
+    color:hsl(243, 87%, 12%);}
+
+p {
+    font-size:15px;
+    text-align:left;
+color:hsl(238, 22%, 44%);}
+
+form {
+    box-sizing:border-box;
+    text-align:left;}
+
+input {width:auto;
+    padding:5px;}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-weight:400px;
+    font-size:11px;
+    padding:8px 20px;
+    margin-left:5px;
+    border-radius:2px;
+    color:white;
+    background-color:hsl(224, 93%, 58%);
+    border:none;}
+
+.testimonial {background-color:white;
+    padding:20px;
+}
+
+
+.profile span p {line-height:0px;
+    margin:2px;}
+
+.dp {border-radius:100px;
+    block-size:40px;}
+
+.name {color:hsl(243, 87%, 12%);} 
+
+.section-2 {padding:20px;
+    color:white;
+    display:flex;
+    align-items:center;
+    margin-top:0;
+    background-color:hsl(238, 22%, 44%)}
+
+.section-2 p {color:white;}
+
+.footer {color:white;
+    background-color:hsl(243, 87%, 12%);}
+
+    .footer p {color:white;}
+
+.seven {display:flex;
+    justify-content:space-evenly;}
