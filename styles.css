@@ -1,25 +1,29 @@
 html {
+
     width: 100%;
     box-sizing: border-box;
 }
 
 body {
+    background: url("./images/bg-curve-desktop.svg") bottom no-repeat;
+    background-size: 270% 70%;
     font-family: 'Open Sans', sans-serif;
-    padding: 20px;
     box-sizing: border-box;
     text-align: left;
-    width: 90%;
+    line-height: 1.2rem;
+    width: 100%;
+    padding: 0px 50px;
     margin: auto;
 }
 
 
 header {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    padding: 10px;
-    margin-bottom: 30px
+    padding: 30px;
 }
 
 .logo {
@@ -35,20 +39,17 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    margin: 20px;
+    margin: 15px;
     color: hsl(238, 22%, 44%);
 }
 
 .main-container {
-    background: white url("./images/bg-curve-desktop.svg") bottom no-repeat;
-    background-size: 250% 60%;
-    align-items: center;
+    padding: 40px;
     justify-content: left;
     box-sizing: border-box;
     display: grid;
-    padding: 30px;
     row-gap: 150px;
-    grid-template-columns: 45% auto;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
 }
 
@@ -56,42 +57,17 @@ nav ul li a {
     width: 60%;
 }
 
-.item {
-    padding: 10px;
-}
-
-.item>p {
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.one {
-    grid-area: 1/2/2/3;
-}
-
-.two>p {
-    padding-right: 80px;
-}
-
-.four>p {
-    font-weight: bold;
-    padding-right: 85px;
-}
-
-.three {
-    grid-area: 2/2/3/3;
-}
-
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 29px;
+    line-height: 2rem;
     font-weight: 700;
     color: hsl(243, 87%, 12%);
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
     color: hsl(238, 22%, 44%);
 }
@@ -102,27 +78,82 @@ form {
 }
 
 input {
+    border: 1px solid gray;
+    border-radius: 3px;
     margin: 5px;
-    padding: 5px;
+    padding: 8px;
 }
 
-.button {
+#email {
+    width: 50%;
+}
+
+#button {
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 11px;
-    padding: 8px 25px;
-    border-radius: 2px;
+    padding: 9px 40px;
     color: white;
     background-color: hsl(224, 93%, 58%);
     border: none;
 }
 
+#button:hover {
+    cursor: pointer;
+    background-color: hsla(256, 44%, 51%, 0.678);
+}
+
+.link {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 4px;
+    border-bottom: 1px solid hsl(157, 78%, 31%);
+}
+
+.link:hover {
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.link a {
+    text-decoration: none;
+    color: hsl(157, 78%, 31%);
+    font-weight: 400px;
+}
+
+.link a:hover {
+    color: hsl(170, 45%, 43%);
+}
+
+.item>p {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.one {
+    grid-area: 1/2/2/3;
+}
+
+.two>h2 {
+    padding-right: 150px;
+}
+
+.two>p {
+    padding-right: 200px;
+}
+
+.three {
+    grid-area: 2/2/3/3;
+}
+
+.four>p {
+    padding-right: 200px;
+}
+
 .testimonial {
-    box-shadow: 1px 1px 8px hsl(238, 22%, 44%);
+    box-shadow: 1px 1px 10px hsl(238, 22%, 44%);
     width: 40%;
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 15px;
 }
 
 .testimonial p {
@@ -134,29 +165,30 @@ input {
 }
 
 .profile span p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 0px;
     margin: 0px;
 }
 
 .dp {
     border-radius: 100px;
-    block-size: 40px;
+    block-size: 30px;
 }
 
 .name {
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: bolder;
     color: hsl(243, 87%, 12%);
 }
 
 .section-2 {
     padding: 40px;
-    color: white;
+    color: hsl(240, 75%, 98%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0;
-    background-color: hsl(238, 22%, 44%)
+    background-color: hsl(240, 23%, 39%)
 }
 
 .section-2 p {
@@ -168,10 +200,18 @@ input {
     width: 35%;
 }
 
+.five h3 {
+    letter-spacing: 0.1rem;
+}
+
 .six {
     width: 40%;
     margin-left: 10px;
     margin-right: 0;
+}
+
+.six input {
+    border: none;
 }
 
 .footer {
@@ -179,15 +219,20 @@ input {
     background-color: hsl(243, 87%, 12%);
 }
 
-.lists {
-    font-weight:400;
+.lists>p {
+    font-weight: 400;
     font-size: 13px;
     color: hsl(0, 0%, 75%);
 }
 
+.lists>p:hover {
+    color: hsla(256, 44%, 51%, 0.678);
+    cursor: pointer;
+}
+
 .lists img {
     vertical-align: bottom;
-    block-size: 10px;
+    block-size: 15px;
     margin: 5px;
 }
 
@@ -196,11 +241,129 @@ input {
     justify-content: space-between;
 }
 
-.socials{position:abolute;
-    margin-right:150px;
-    justify-self:left;
-    float:left;}
+.socials {
+    position: abolute;
+    margin-right: 150px;
+}
 
-.fa {color:white;
-    margin:10px;
+.fa {
+    text-decoration: none;
+    padding: 6px;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 100px;
+    color: white;
+    margin: 10px;
+}
+
+.fa:hover {
+    color: hsla(256, 44%, 51%, 0.678);
+    ;
+    cursor: pointer;
+}
+
+@media screen and (max-width:850px) and (min-width:144px) {
+
+    html {
+        background: url("./images/bg-curve-mobile.svg") bottom no-repeat;
+        background-size: 100% 70%;
+        width: 100%;
+    }
+
+    body {
+        margin: 0px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        line-height: 1.2rem;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .main-container {
+        margin: 0px;
+        padding: 5px 0px 40px 0px;
+        width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    header {
+        margin: 0px;
+        padding: 10px;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .illustration-img {
+        width: 100%;
+    }
+
+    .item {
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        padding: 0px 30px;
+    }
+
+    form {
+        width: 80%;
+        text-align: left;
+    }
+
+    input {
+        border: 1px solid gray;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    #button {
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 11px;
+        padding: 9px 40px;
+        border: none;
+    }
+
+    .one,
+    .three {
+        grid-area: auto;
+    }
+
+    .two h2,
+    .two p,
+    .four p {
+        padding-right: 0px;
+    }
+
+    .four h2 {
+        font-size: 20px;
+    }
+
+    #email {
+        width: 90%;
+    }
+
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        color: hsl(238, 22%, 44%);
+    }
+
+    .testimonial {
+        margin: 5px;
+        width: 60%;
+    }
 }

@@ -11,7 +11,7 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-  
+
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
   </style>
 
@@ -42,8 +42,9 @@
         family, and co-workers.</p>
 
       <form action="#">
-      <input style="width:50%;" type="email" id="email" name="email" placeholder="Enter your email"><input type="button" class="button" value="Get Started">
-    </form>
+        <input class="first-input" type="email" id="email" name="email" pattern=".+@^[a-zA-Z0-]\.com"
+          placeholder="Enter your email"><input type="submit" id="button" value="Get Started">
+      </form>
     </div>
     <div class="item three"><img class="illustration-img" src="./images/illustration-2.svg" alt="illutration image">
     </div>
@@ -56,41 +57,43 @@
       <p>Securely share files and folders with friends, family and colleagues for
         live collaboration. No email attachments required!</p>
 
-      <p><a style="color:hsl(170, 45%, 43%); font-weight:400px;" href="#">See how Fylo works</a><img src="./images/icon-arrow.svg" alt="arrow"
-          style="vertical-align:middle; margin:3px;"></p>
+      <p><span class="link"> <a href="#">See how Fylo works</a><img src="./images/icon-arrow.svg" alt="arrow"
+            style="vertical-align:middle; margin:3px;"></span></p>
 
       <div class="testimonial">
         <img style="float:left;" src="./images/icon-quotes.svg" alt="quote image"><br>
         <p style="margin-top:0;">Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration machine.</p>
+          making the switch our team has become a well-oiled collaboration machine.</p>
         <div class="profile" style="display:flex; justify-content:start; align-items:center;">
           <img class="dp" src="./images/avatar-testimonial.jpg" alt="">
-          <span><p class="name">Kyle Burton</p><br>
+          <span>
+            <p class="name">Kyle Burton</p><br>
             <p>Founder & CEO, Huddle</p>
           </span>
         </div>
       </div>
     </div>
   </div>
-  <div class="section-2" >
+  <div class="section-2">
     <div class="five">
-      <div><h3>Get early access today</h2>
+      <h3>Get early access today</h3>
 
-        <p>It only takes a minute to sign up and our free starter tier is extremely generous.
-          If you have any questions, our support team would be happy to help you.</p>
-        </div>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.</p>
+
     </div>
     <div class="six">
       <form action="#">
-      <input type="email" id="email" name="email" placeholder="Enter your email">
-      <br><input type="button" class="button" value="Get Started For Free">
-    </form>
+        <input class="second-input" pattern=".+@^[a-zA-Z0-]\.com" id="email" name="email"
+          placeholder="email@example.com" />
+        <br><input type="submit" id="button" value="Get Started For Free">
+      </form>
     </div>
   </div>
 
   <div class="footer">
 
-    <img style="block-size:40px;" src="./images/logo copy.svg" alt="flyo logo">
+    <img style="block-size:35px;" src="./images/logo copy.svg" alt="flyo logo">
     <div class="footer-divs">
       <div class="lists">
         <p><img src="./images/icon-phone.svg">Phone: +1-543-123-4567</p>
@@ -114,15 +117,15 @@
         <a href="#" class="fa fa-instagram"></a>
       </div>
     </div>
-    </div>
+  </div>
 
 
-    <footer style="text-align:center;">
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+  <footer style="text-align:center;">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
 </body>
 
 </html>
