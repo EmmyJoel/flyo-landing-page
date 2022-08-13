@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
@@ -17,7 +19,6 @@
 
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -41,10 +42,12 @@
         Access them wherever you need, share and collaborate with friends,
         family, and co-workers.</p>
 
-      <form action="#">
-        <input class="first-input" type="email" id="email" name="email" pattern=".+@^[a-zA-Z0-]\.com"
-          placeholder="Enter your email"><input type="submit" id="button" value="Get Started">
-      </form>
+      <div class="form">
+        <form action="#">
+          <input class="first-input" type="email" id="email" name="email" type="email" placeholder="Enter your email">
+          <input type="submit" id="button" value="Get Started">
+        </form>
+      </div>
     </div>
     <div class="item three"><img class="illustration-img" src="./images/illustration-2.svg" alt="illutration image">
     </div>
@@ -67,7 +70,7 @@
         <div class="profile" style="display:flex; justify-content:start; align-items:center;">
           <img class="dp" src="./images/avatar-testimonial.jpg" alt="">
           <span>
-            <p class="name">Kyle Burton</p><br>
+            <p id="name">Kyle Burton</p>
             <p>Founder & CEO, Huddle</p>
           </span>
         </div>
@@ -75,40 +78,48 @@
     </div>
   </div>
   <div class="section-2">
-    <div class="five">
+    <div class=" item five">
       <h3>Get early access today</h3>
 
       <p>It only takes a minute to sign up and our free starter tier is extremely generous.
         If you have any questions, our support team would be happy to help you.</p>
 
     </div>
-    <div class="six">
-      <form action="#">
-        <input class="second-input" pattern=".+@^[a-zA-Z0-]\.com" id="email" name="email"
-          placeholder="email@example.com" />
-        <br><input type="submit" id="button" value="Get Started For Free">
-      </form>
+    <div class=" item six">
+      <div class="form">
+        <form action="#">
+          <input class="second-input" type="mail" id="email" name="email" placeholder="email@example.com" />
+          <br><input type="submit" id="button" value="Get Started For Free">
+        </form>
+      </div>
     </div>
   </div>
 
   <div class="footer">
 
     <img style="block-size:35px;" src="./images/logo copy.svg" alt="flyo logo">
-    <div class="footer-divs">
+    <div class="contact-divs">
       <div class="lists">
-        <p><img src="./images/icon-phone.svg">Phone: +1-543-123-4567</p>
-        <p><img src="./images/icon-email.svg">example@fylo.com</p>
+        <ul>
+          <li><a href="#"><img src="./images/icon-phone.svg">Phone: +1-543-123-4567</a></li>
+          <li><a href="#"><img src="./images/icon-email.svg">example@fylo.com</a></li>
+        </ul>
       </div>
       <div class="lists">
-        <p>About Us</p>
-        <p>Jobs</p>
-        <p>Press</p>
-        <p>Blog</p>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
       </div>
+
       <div class="lists">
-        <p>Contact Us</p>
-        <p>Terms</p>
-        <p>Privacy</p>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
       </div>
 
       <div class="socials">
@@ -120,10 +131,11 @@
   </div>
 
 
-  <footer style="text-align:center;">
-    <p class="attribution">
+
+  <footer>
+    <p style="text-align:center;">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Jay_n_Codes</a>.
     </p>
   </footer>
 </body>
